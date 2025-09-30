@@ -49,6 +49,18 @@
         </div>
     </section>
 
+    <script>
+        const linksVideos = document.querySelectorAll(´.categoria-videos a´);
+        const videosAtual = document.getElementById(´videoAtual`);
+
+        linksVideos.forEarch(link => {
+            link.addEventListener(´click`, function (event) {
+                event.preventDefaul();
+                const idVideos = this.dataset.video;
+                videoAtual.src = `https://www.youtube.com/embed/$(idiVideo)`;
+        });    });   
+
+    </script>
 </body>
 
 </html>
